@@ -7,6 +7,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
+  react-router-dom:
+    specifier: ^6.14.2
+    version: registry.npmjs.org/react-router-dom@6.14.2(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@types/react':
@@ -451,6 +454,13 @@ packages:
       '@nodelib/fs.scandir': registry.npmjs.org/@nodelib/fs.scandir@2.1.5
       fastq: registry.npmjs.org/fastq@1.15.0
     dev: true
+
+  registry.npmjs.org/@remix-run/router@1.7.2:
+    resolution: {integrity: sha512-7Lcn7IqGMV+vizMPoEl5F0XDshcdDYtMI6uJLQdQz5CfZAwy3vvGKYSUk789qndt5dEC4HfSjviSYlSoHGL2+A==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/@remix-run/router/-/router-1.7.2.tgz}
+    name: '@remix-run/router'
+    version: 1.7.2
+    engines: {node: '>=14'}
+    dev: false
 
   registry.npmjs.org/@swc/core-darwin-arm64@1.3.74:
     resolution: {integrity: sha512-2rMV4QxM583jXcREfo0MhV3Oj5pgRSfSh/kVrB1twL2rQxOrbzkAPT/8flmygdVoL4f2F7o1EY5lKlYxEBiIKQ==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.74.tgz}
@@ -2517,6 +2527,35 @@ packages:
     name: react-is
     version: 16.13.1
     dev: true
+
+  registry.npmjs.org/react-router-dom@6.14.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-5pWX0jdKR48XFZBuJqHosX3AAHjRAzygouMTyimnBPOLdY3WjzUSKhus2FVMihUFWzeLebDgr4r8UeQFAct7Bg==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.14.2.tgz}
+    id: registry.npmjs.org/react-router-dom/6.14.2
+    name: react-router-dom
+    version: 6.14.2
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': registry.npmjs.org/@remix-run/router@1.7.2
+      react: registry.npmjs.org/react@18.2.0
+      react-dom: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
+      react-router: registry.npmjs.org/react-router@6.14.2(react@18.2.0)
+    dev: false
+
+  registry.npmjs.org/react-router@6.14.2(react@18.2.0):
+    resolution: {integrity: sha512-09Zss2dE2z+T1D03IheqAFtK4UzQyX8nFPWx6jkwdYzGLXd5ie06A6ezS2fO6zJfEb/SpG6UocN2O1hfD+2urQ==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/react-router/-/react-router-6.14.2.tgz}
+    id: registry.npmjs.org/react-router/6.14.2
+    name: react-router
+    version: 6.14.2
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': registry.npmjs.org/@remix-run/router@1.7.2
+      react: registry.npmjs.org/react@18.2.0
+    dev: false
 
   registry.npmjs.org/react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/react/-/react-18.2.0.tgz}
