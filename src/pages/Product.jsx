@@ -47,20 +47,24 @@ export function ProductPage () {
     fetchProduct()
   }, [params])
 
-  if (api.error) {
-    return (
-     <Layout>
-       <h1>Error ocurred</h1>
-       <Link to="/">Back to home</Link>
-     </Layout>
-    )
-  }
-
   if (api.loading) {
     return (
       <Layout>
         <FetchLoading />
       </Layout>
+    )
+  }
+
+  if (!api.loading && api.error) {
+    return (
+     <Layout>
+        <div className="flex flex-col items-center">
+          <h1 className="">Error ocurred</h1>
+          <h2 className="mb-10">{api.errorMessage}</h2>
+
+          <Link to="/">Back to home</Link>
+        </div>
+     </Layout>
     )
   }
 
